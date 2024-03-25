@@ -1,9 +1,10 @@
-package ru.example.studenthubclient
+package ru.example.studenthubclient.adapters
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
-import androidx.fragment.app.FragmentManager
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import ru.example.studenthubclient.fragments.LoginFragment
+import ru.example.studenthubclient.fragments.RegisterFragment
 
 class ViewPagerAdapter(fragmentActivity: FragmentActivity) :
     FragmentStateAdapter(fragmentActivity) {
