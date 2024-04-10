@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Заполните данные студента"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:hint="Имя"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/roboto_regular"
+        android:background="@drawable/et_custom"
+        />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:hint="Возраст"
+        android:inputType="number"
+        android:fontFamily="@font/roboto_regular"
+        android:background="@drawable/et_custom"
+        />
+
+    <EditText
+        android:id="@+id/mEdu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:hint="Образование матери"
+        android:inputType="textPostalAddress"
+        android:fontFamily="@font/roboto_regular"
+        android:background="@drawable/et_custom"
+        />
+
+
+    <EditText
+        android:id="@+id/fEdu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:hint="Образование отца"
+        android:inputType="textPostalAddress"
+        android:fontFamily="@font/roboto_regular"
+        android:background="@drawable/et_custom"
+        />
+
+    <EditText
+        android:id="@+id/studyTime"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:hint="Время учебы"
+        android:inputType="textPostalAddress"
+        android:fontFamily="@font/roboto_regular"
+        android:background="@drawable/et_custom"
+        />
+
+    <EditText
+        android:id="@+id/failures"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:hint="Кол-во неудач в прошлых сессиях"
+        android:inputType="textPostalAddress"
+        android:fontFamily="@font/roboto_regular"
+        android:background="@drawable/et_custom"
+        />
+
+    <EditText
+        android:id="@+id/support"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:hint="Доп.обр.поддержка"
+        android:inputType="textPostalAddress"
+        android:fontFamily="@font/roboto_regular"
+        android:background="@drawable/et_custom"
+        />
+
+    <EditText
+        android:id="@+id/higher"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:hint="Желание получить высшее обр."
+        android:inputType="textPostalAddress"
+        android:fontFamily="@font/roboto_regular"
+        android:background="@drawable/et_custom"
+        />
+
+    <EditText
+        android:id="@+id/absences"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:hint="Кол-во пропусков занятий"
+        android:inputType="textPostalAddress"
+        android:fontFamily="@font/roboto_regular"
+        android:background="@drawable/et_custom"
+        />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:layout_gravity="center"/>
+</LinearLayout>
