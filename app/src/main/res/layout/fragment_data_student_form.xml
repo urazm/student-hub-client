@@ -7,40 +7,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Заполните данные студента"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"
         android:layout_marginStart="16dp"
-        />
+        android:layout_marginBottom="16dp"
+        android:text="@string/student_data_fill"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editTextName"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
-        android:padding="15dp"
-        android:hint="Имя"
-        android:inputType="textPersonName"
-        android:fontFamily="@font/roboto_regular"
-        android:background="@drawable/et_custom"
-        />
-
-    <EditText
-        android:id="@+id/editTextAge"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
-        android:padding="15dp"
-        android:hint="Возраст"
-        android:inputType="number"
-        android:fontFamily="@font/roboto_regular"
-        android:background="@drawable/et_custom"
-        />
 
     <EditText
         android:id="@+id/mEdu"
@@ -49,12 +21,11 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
-        android:padding="15dp"
-        android:hint="Образование матери"
-        android:inputType="textPostalAddress"
-        android:fontFamily="@font/roboto_regular"
         android:background="@drawable/et_custom"
-        />
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/m_edu"
+        android:inputType="textPostalAddress"
+        android:padding="15dp" />
 
 
     <EditText
@@ -64,12 +35,11 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
-        android:padding="15dp"
-        android:hint="Образование отца"
-        android:inputType="textPostalAddress"
-        android:fontFamily="@font/roboto_regular"
         android:background="@drawable/et_custom"
-        />
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/f_edu"
+        android:inputType="textPostalAddress"
+        android:padding="15dp" />
 
     <EditText
         android:id="@+id/studyTime"
@@ -78,12 +48,11 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
-        android:padding="15dp"
-        android:hint="Время учебы"
-        android:inputType="textPostalAddress"
-        android:fontFamily="@font/roboto_regular"
         android:background="@drawable/et_custom"
-        />
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/study_time"
+        android:inputType="textPostalAddress"
+        android:padding="15dp" />
 
     <EditText
         android:id="@+id/failures"
@@ -92,12 +61,11 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
-        android:padding="15dp"
-        android:hint="Кол-во неудач в прошлых сессиях"
-        android:inputType="textPostalAddress"
-        android:fontFamily="@font/roboto_regular"
         android:background="@drawable/et_custom"
-        />
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/failures"
+        android:inputType="textPostalAddress"
+        android:padding="15dp" />
 
     <EditText
         android:id="@+id/support"
@@ -106,12 +74,11 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
-        android:padding="15dp"
-        android:hint="Доп.обр.поддержка"
-        android:inputType="textPostalAddress"
-        android:fontFamily="@font/roboto_regular"
         android:background="@drawable/et_custom"
-        />
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/support"
+        android:inputType="textPostalAddress"
+        android:padding="15dp" />
 
     <EditText
         android:id="@+id/higher"
@@ -120,12 +87,11 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
-        android:padding="15dp"
-        android:hint="Желание получить высшее обр."
-        android:inputType="textPostalAddress"
-        android:fontFamily="@font/roboto_regular"
         android:background="@drawable/et_custom"
-        />
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/higher"
+        android:inputType="textPostalAddress"
+        android:padding="15dp" />
 
     <EditText
         android:id="@+id/absences"
@@ -134,17 +100,23 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
-        android:padding="15dp"
-        android:hint="Кол-во пропусков занятий"
-        android:inputType="textPostalAddress"
-        android:fontFamily="@font/roboto_regular"
         android:background="@drawable/et_custom"
-        />
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/absence"
+        android:inputType="textPostalAddress"
+        android:padding="15dp" />
 
     <Button
-        android:id="@+id/buttonSave"
+        android:id="@+id/button_student_fill"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Сохранить"
-        android:layout_gravity="center"/>
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_custom"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/calculate"
+        android:textColor="@android:color/white"
+
+        />
 </LinearLayout>

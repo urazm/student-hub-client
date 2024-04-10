@@ -7,15 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import ru.example.studenthubclient.R
 
-class RegisterFragment : Fragment() {
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_register, container, false)
-    }
+class RegisterFragment : Fragment(R.layout.fragment_register) {
 
 
 }

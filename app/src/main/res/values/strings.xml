@@ -19,4 +19,17 @@
     <string name="number_places_grant">Количество мест на грант</string>
     <string name="number_students_apply_grant">Количество студентов подавших заявление на грант</string>
     <string name="calculate">Рассчитать</string>
+    <string name="save">Сохранить</string>
+    <string name="absence">Кол-во пропусков занятий</string>
+    <string name="higher">Желание получить высшее обр.</string>
+    <string name="support">Доп.обр.поддержка</string>
+    <string name="failures">Кол-во доп.сессий</string>
+    <string name="study_time">Время учебы</string>
+    <string name="f_edu">Образование отца</string>
+    <string name="m_edu">Образование матери</string>
+    <string name="student_data_fill">Заполните данные студента</string>
+    <string name="predict_title">Прогноз по гранту:</string>
+    <string name="statistic">Статистика</string>
+    <string name="failures_text">Пропущенные занятия</string>
+    <string name="average_score">Средний балл:</string>
 </resources>

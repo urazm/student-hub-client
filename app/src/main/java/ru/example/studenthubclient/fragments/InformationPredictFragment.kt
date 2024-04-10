@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import ru.example.studenthubclient.R
 
 
-class DataGrantScoreFormFragment : Fragment(R.layout.fragment_data_grant_score_form) {
-
+class InformationPredictFragment : Fragment(R.layout.fragment_information_predict) {
 
 }
