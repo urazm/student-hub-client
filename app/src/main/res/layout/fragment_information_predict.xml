@@ -64,7 +64,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="16dp">
 
@@ -72,23 +72,28 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Учебная успеваемость:"
+                android:text="@string/academic_performance"
                 android:textSize="18sp"
                 android:textColor="@android:color/black"
                 android:layout_marginBottom="8dp"/>
 
             <!-- Блок для отображения среднего балла -->
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 >
                 <LinearLayout
+                    android:id="@+id/green_block"
                     android:layout_width="130dp"
                     android:layout_height="100dp"
                     android:orientation="vertical"
                     android:background="@drawable/border_green_background"
                     android:gravity="center"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/red_block"
 
                     >
 
@@ -105,18 +110,27 @@
                         android:text="@string/average_score"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@android:color/darker_gray"/>
+                        android:textColor="@android:color/darker_gray"
+
+
+                        />
 
 
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/red_block"
                     android:layout_width="130dp"
                     android:layout_height="100dp"
                     android:layout_marginStart="30dp"
                     android:orientation="vertical"
                     android:background="@drawable/border_red_background"
+                    android:layout_gravity="end"
                     android:gravity="center"
+                    app:layout_constraintStart_toEndOf="@id/green_block"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
 
                     >
 
@@ -134,32 +148,11 @@
                         android:text="@string/failures_text"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@android:color/darker_gray"/>
-
-
+                        android:textColor="@android:color/darker_gray"
+                        android:gravity="center"
+                        />
                 </LinearLayout>
-
-
-        </LinearLayout>
-
-            <!-- Блок для отображения количества пропущенных занятий -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <!-- Добавьте сюда текстовое поле для отображения количества пропущенных занятий -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Количество пропущенных занятий"
-                    android:textSize="16sp"
-                    android:textColor="@android:color/black"/>
-
-                <!-- Здесь будет отображаться количество пропущенных занятий -->
-
-            </LinearLayout>
-
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
