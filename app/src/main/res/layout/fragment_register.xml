@@ -8,6 +8,7 @@
     tools:context=".fragments.RegisterFragment">
 
     <TextView
+
         android:id="@+id/tv_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -98,14 +99,14 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="30dp"
-            android:layout_centerInParent="true"
+            android:layout_marginTop = "30dp"
             android:textColor="@android:color/white"
             android:text="@string/register"/>
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/ic_arrow_left"
+            android:src="@drawable/ic_arrow_right"
             android:layout_above="@id/swipeLeft"
             android:layout_centerHorizontal="true"/>
 

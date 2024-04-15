@@ -10,6 +10,4 @@ import ru.example.studenthubclient.R
 
 class LoginFragment : Fragment(R.layout.fragment_login) {
 
-
-
 }
