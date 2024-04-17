@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_app"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/dataStudentFormFragment"
+        android:name="ru.example.studenthubclient.fragments.DataStudentFormFragment"
+        android:label="DataStudentFormFragment"
+        tools:layout="@layout/fragment_data_student_form"
+
+        >
+        <action
+            android:id="@+id/action_dataStudentFormFragment_to_dataGrantScoreFormFragment"
+            app:destination="@id/dataGrantScoreFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataGrantScoreFormFragment"
+        android:name="ru.example.studenthubclient.fragments.DataGrantScoreFormFragment"
+        android:label="DataGrantScoreFormFragment"
+        tools:layout="@layout/fragment_data_grant_score_form"
+        >
+        <action
+            android:id="@+id/action_dataGrantScoreFormFragment_to_informationPredictFragment"
+            app:destination="@id/informationPredictFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/informationPredictFragment"
+        android:name="ru.example.studenthubclient.fragments.InformationPredictFragment"
+        android:label="InformationPredictFragment"
+        tools:layout="@layout/fragment_information_predict"
+        />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ru.example.studenthubclient.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_dataStudentFormFragment"
+            app:destination="@id/dataStudentFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="ru.example.studenthubclient.fragments.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_dataStudentFormFragment"
+            app:destination="@id/dataStudentFormFragment" />
+    </fragment>
+</navigation>
