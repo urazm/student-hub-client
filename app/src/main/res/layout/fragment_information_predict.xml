@@ -121,7 +121,7 @@
                     android:layout_height="100dp"
                     android:layout_marginStart="30dp"
                     android:orientation="vertical"
-                    android:background="@drawable/border_red_background"
+                    android:background="@drawable/border_green_background"
                     android:layout_gravity="end"
                     android:gravity="center"
                     app:layout_constraintStart_toEndOf="@id/green_block"

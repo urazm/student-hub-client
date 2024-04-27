@@ -5,12 +5,12 @@
     <string name="login">Login</string>
     <string name="password">Password</string>
     <string name="e_mail">Email</string>
-    <string name="tag">Добро пожаловать в наше приложение для анализа успеваемости студентов!</string>
+    <string name="tag">Добро пожаловать в наше приложение для прогнозирования успеваемости студента!</string>
     <string name="swipe_right_for_login">Swipe Right for Login</string>
     <string name="register">Register</string>
     <string name="re_type_password">Re-type Password</string>
     <string name="your_name">Full Name</string>
-    <string name="input_info">Введите данные:</string>
+    <string name="input_info">Заполните данные влияющие на минимальный балл гранта:</string>
     <string name="aveage_score_course">Средний балл успеваемости</string>
     <string name="number_places_grant">Количество мест на грант</string>
     <string name="number_students_apply_grant">Количество студентов подавших заявление на грант</string>
