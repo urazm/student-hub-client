@@ -115,7 +115,7 @@
         android:layout_marginRight="20dp"
         android:background="@drawable/btn_custom"
         android:fontFamily="@font/roboto_regular"
-        android:text="@string/calculate"
+        android:text="@string/next"
         android:textColor="@android:color/white"
 
         />
