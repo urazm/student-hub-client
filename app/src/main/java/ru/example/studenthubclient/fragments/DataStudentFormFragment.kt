@@ -1,5 +1,7 @@
 package ru.example.studenthubclient.fragments
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -16,7 +18,11 @@ import ru.example.studenthubclient.viewmodels.DataStudentFormViewModel
 class DataStudentFormFragment : Fragment(R.layout.fragment_data_student_form) {
 
     private val viewModel: DataStudentFormViewModel by viewModels()
-
+    private lateinit var sharedPreferences: SharedPreferences
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        sharedPreferences = context.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+    }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -47,10 +53,19 @@ class DataStudentFormFragment : Fragment(R.layout.fragment_data_student_form) {
         viewModel.prediction.observe(viewLifecycleOwner, Observer { prediction ->
             Log.d("student", prediction.score.toString())
             if (prediction != null) {
-                // TODO: Сохранить предикт и передать в финальный фрагмент
+                savePrediction(prediction.score)
                 Toast.makeText(requireContext(), "Prediction: ${prediction.score}", Toast.LENGTH_LONG).show()
+                val savedPrediction = sharedPreferences.getFloat("prediction_score", -1f)
+                Log.d("student", "Saved prediction: $savedPrediction")
                 findNavController().navigate(R.id.action_dataStudentFormFragment_to_dataGrantScoreFormFragment)
             }
         })
     }
+    private fun savePrediction(score: Float) {
+        with(sharedPreferences.edit()) {
+            putFloat("prediction_score", score)
+            apply()
+        }
+    }
+
 }
