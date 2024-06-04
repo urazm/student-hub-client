@@ -1,6 +1,7 @@
 package ru.example.studenthubclient.fragments
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -37,10 +38,14 @@ class DataStudentFormFragment : Fragment(R.layout.fragment_data_student_form) {
             val higherText = higher.text.toString()
             val absencesText = absences.text.toString()
 
+            Log.d("student", "Button clicked")
+            Log.d("student", "Data: $mEduText, $fEduText, $studyTimeText, $failuresText, $supportText, $higherText, $absencesText")
+
             viewModel.submitData(mEduText, fEduText, studyTimeText, failuresText, supportText, higherText, absencesText)
         }
 
         viewModel.prediction.observe(viewLifecycleOwner, Observer { prediction ->
+            Log.d("student", prediction.score.toString())
             if (prediction != null) {
                 // TODO: Сохранить предикт и передать в финальный фрагмент
                 Toast.makeText(requireContext(), "Prediction: ${prediction.score}", Toast.LENGTH_LONG).show()

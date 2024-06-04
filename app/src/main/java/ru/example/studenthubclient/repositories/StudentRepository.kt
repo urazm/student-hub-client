@@ -1,11 +1,16 @@
 package ru.example.studenthubclient.repositories
 
+import android.util.Log
 import ru.example.studenthubclient.models.PredictionResponse
+import ru.example.studenthubclient.models.StudentData
 import ru.example.studenthubclient.network.ApiService
+import ru.example.studenthubclient.network.RetrofitInstance
 
-class StudentRepository(private val apiService: ApiService) {
+class StudentRepository {
 
-    suspend fun predictStudentScore(mEdu: String, fEdu: String, studyTime: String, failures: String, support: String, higher: String, absences: String): PredictionResponse {
-        return apiService.predictStudentScore(mEdu, fEdu, studyTime, failures, support, higher, absences)
+    private val apiService = RetrofitInstance.api
+
+    suspend fun predictStudentScore(studentData: StudentData): PredictionResponse {
+        return apiService.predictStudentScore(studentData)
     }
 }
