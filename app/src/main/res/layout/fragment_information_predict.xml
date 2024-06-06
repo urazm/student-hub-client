@@ -40,7 +40,7 @@
                 android:layout_marginBottom="8dp"/>
 
             <TextView
-                android:id="@+id/predict"
+                android:id="@+id/final_predict"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Вы успешно пройдете на грант"
@@ -98,7 +98,6 @@
                         android:id="@+id/student_performance_predict"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="88"
                         android:textSize="16sp"
                         android:textColor="@android:color/holo_green_dark"
                         />
@@ -133,9 +132,9 @@
                     >
 
                     <TextView
+                        android:id="@+id/min_grant_predict"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="85"
                         android:textSize="16sp"
                         android:textColor="@android:color/holo_green_dark"
                         />

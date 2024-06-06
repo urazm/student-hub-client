@@ -8,7 +8,6 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 import ru.example.studenthubclient.models.PredictionResponse
 import ru.example.studenthubclient.models.StudentData
-import ru.example.studenthubclient.network.RetrofitInstance
 import ru.example.studenthubclient.repositories.StudentRepository
 
 class DataStudentFormViewModel : ViewModel() {
@@ -18,7 +17,8 @@ class DataStudentFormViewModel : ViewModel() {
     private val _prediction = MutableLiveData<PredictionResponse>()
     val prediction: LiveData<PredictionResponse> get() = _prediction
 
-    fun submitData(mEdu: String, fEdu: String, studyTime: String, failures: String, support: String, higher: String, absences: String) {
+    fun submitData(mEdu: String, fEdu: String, studyTime: String, failures: String,
+                   support: String, higher: String, absences: String) {
         val studentData = StudentData(mEdu, fEdu, studyTime, failures, support, higher, absences)
         viewModelScope.launch {
             try {
